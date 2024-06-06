@@ -1,3 +1,4 @@
+import 'package:adv_basics/logo_image.dart';
 import 'package:flutter/material.dart';
 
 class AdvBasicContainer extends StatelessWidget {
@@ -17,10 +18,7 @@ class AdvBasicContainer extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'assets/images/quiz-logo.png',
-              height: 300,
-            ),
+            const LogoImage(),
             const SizedBox(
               height: 60,
             ),
