@@ -17,10 +17,32 @@ class AdvBasicContainer extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Learn Flutter the fun way!'),
+            Image.asset(
+              'assets/images/quiz-logo.png',
+              height: 300,
+            ),
+            const SizedBox(
+              height: 60,
+            ),
+            const Text(
+              'Learn Flutter the fun way!',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
             TextButton(
               onPressed: onPressed,
-              child: const Text('Start Quiz'),
+              child: const Text(
+                'Start Quiz',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                ),
+              ),
             ),
           ],
         ),
